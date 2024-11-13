@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Solutions for Precision Farming</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="index-page">
+    <div class="container index-container">
+        <h1>AI-Driven Solutions for Precision Farming</h1>
+        <p>Crop Selection using Machine Learning</p>
+        <p>Enter the feature values below to get predictions on optimal crop selection based on environmental factors.</p>
+        <a href="{{ url_for('predict') }}" class="button">Start Prediction</a>
+    </div>
+</body>
+</html>

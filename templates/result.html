@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="result-page">
+    <div class="container result-container">
+        <h2>Prediction Result</h2>
+        <div class="prediction-box">
+            <p>The predicted crop label is: <strong>{{ prediction }}</strong></p>
+        </div>
+        <a href="{{ url_for('index') }}" class="button">Go Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f3f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Styles for Index Page */
+.index-page .container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.index-page h1 {
+    color: #4CAF50; /* Green for the heading */
+    font-size: 3.2em; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Space below the heading */
+    font-weight: bold; /* Make the heading bold */
+    text-transform: uppercase; /* Capitalize all letters for a highlighted effect */
+}
+
+.index-page p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Add more space between the heading and the button */
+.index-page .button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease;
+    margin-top: 40px; /* Space between the heading and button */
+}
+
+.index-page .button:hover {
+    background-color: #388E3C;
+}
+
+/* Styles for Predict Page */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+h2 {
+    color: #1976D2;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 1em;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #1976D2;
+}
+
+button {
+    background-color: #1976D2;
+    color: white;
+    padding: 15px 35px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565C0;
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Styles for Result Page */
+.result-page .container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.result-page h2 {
+    color: #F57C00;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.result-page .prediction-box {
+    background-color: #FFF3E0;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-page .prediction-box strong {
+    font-size: 1.6em;
+    color: #D32F2F;
+}
+
+.result-page .button {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #F57C00;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease;
+}
+
+.result-page .button:hover {
+    background-color: #F4511E;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1, h2 {
+        font-size: 2.5em;
+    }
+
+    .button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .error {
+        font-size: 0.9em;
+    }
+}
